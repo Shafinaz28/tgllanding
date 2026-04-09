@@ -97,6 +97,16 @@
     scrollbar-width: none;
   }
 </style>
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
 </head>
 
 <body class="bg-white text-slate-800 antialiased">
@@ -338,58 +348,83 @@
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="bg-navy py-20 lg:py-24">
-    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <div class="reveal mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span class="inline-flex rounded-full bg-gold/10 px-4 py-2 text-sm font-bold text-gold">
-          Our Services Through TGL
-        </span>
-        <h2 class="mt-5 text-3xl font-extrabold text-white md:text-5xl">
-          What we offer participating businesses
-        </h2>
-        <p class="mt-5 text-lg leading-8 text-white/70">
-          We provide businesses with visibility, evaluation, promotion, recognition, and meaningful networking opportunities.
+<section id="services" class="bg-navy py-20 lg:py-24">
+  <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+    <div class="reveal mx-auto flex max-w-3xl flex-col items-center text-center">
+      <span class="inline-flex rounded-full bg-gold/10 px-4 py-2 text-sm font-bold text-gold">
+        Our Services Through TGL
+      </span>
+      <h2 class="mt-5 text-3xl font-extrabold text-white md:text-5xl">
+        What we offer participating businesses
+      </h2>
+      <p class="mt-5 text-lg leading-8 text-white/70">
+        We provide businesses with visibility, evaluation, promotion, recognition, and meaningful networking opportunities.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+      <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-white backdrop-blur">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7l9-4 9 4-9 4-9-4zm0 5l9 4 9-4m-18 5l9 4 9-4" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-gold">Brand Showcase Platform</h3>
+        <p class="mt-3 text-sm leading-7 text-white/70">
+          Present your products and services to a targeted and relevant audience.
         </p>
       </div>
 
-      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-        <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-white backdrop-blur">
-          <h3 class="text-lg font-bold text-gold">Brand Showcase Platform</h3>
-          <p class="mt-3 text-sm leading-7 text-white/70">
-            Present your products and services to a targeted and relevant audience.
-          </p>
+      <div class="reveal reveal-delay-1 rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-white backdrop-blur">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13v6M9 17H5a2 2 0 01-2-2V7a2 2 0 012-2h4m0 12V5m0 0l3 3m-3-3L6 8" />
+          </svg>
         </div>
+        <h3 class="text-lg font-bold text-gold">Business Evaluation</h3>
+        <p class="mt-3 text-sm leading-7 text-white/70">
+          Get reviewed by experienced professionals and industry experts.
+        </p>
+      </div>
 
-        <div class="reveal reveal-delay-1 rounded-3xl border border-white/10 bg-white/5 p-6 text-white backdrop-blur">
-          <h3 class="text-lg font-bold text-gold">Business Evaluation</h3>
-          <p class="mt-3 text-sm leading-7 text-white/70">
-            Get reviewed by experienced professionals and industry experts.
-          </p>
+      <div class="reveal reveal-delay-2 rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-white backdrop-blur">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5h2m-1-1v2m-7 6h2m8 0h2m-9 7h6a2 2 0 002-2v-5H8v5a2 2 0 002 2z" />
+          </svg>
         </div>
+        <h3 class="text-lg font-bold text-gold">Brand Visibility & Promotion</h3>
+        <p class="mt-3 text-sm leading-7 text-white/70">
+          Feature your business across digital platforms and event promotions.
+        </p>
+      </div>
 
-        <div class="reveal reveal-delay-2 rounded-3xl border border-white/10 bg-white/5 p-6 text-white backdrop-blur">
-          <h3 class="text-lg font-bold text-gold">Brand Visibility & Promotion</h3>
-          <p class="mt-3 text-sm leading-7 text-white/70">
-            Feature your business across digital platforms and event promotions.
-          </p>
+      <div class="reveal reveal-delay-3 rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-white backdrop-blur">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5m10 0v-4a3 3 0 00-3-3H10a3 3 0 00-3 3v4m10 0H7m8-10a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
         </div>
+        <h3 class="text-lg font-bold text-gold">Networking Opportunities</h3>
+        <p class="mt-3 text-sm leading-7 text-white/70">
+          Connect with entrepreneurs, professionals, and decision-makers.
+        </p>
+      </div>
 
-        <div class="reveal reveal-delay-3 rounded-3xl border border-white/10 bg-white/5 p-6 text-white backdrop-blur">
-          <h3 class="text-lg font-bold text-gold">Networking Opportunities</h3>
-          <p class="mt-3 text-sm leading-7 text-white/70">
-            Connect with entrepreneurs, professionals, and decision-makers.
-          </p>
+      <div class="reveal reveal-delay-4 rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-white backdrop-blur">
+        <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 1.79-4 4v6h8v-6c0-2.21-1.79-4-4-4zm0 0V6a2 2 0 114 0v2M8 10V8a4 4 0 118 0v2" />
+          </svg>
         </div>
-
-        <div class="reveal reveal-delay-4 rounded-3xl border border-white/10 bg-white/5 p-6 text-white backdrop-blur">
-          <h3 class="text-lg font-bold text-gold">Recognition & Credibility</h3>
-          <p class="mt-3 text-sm leading-7 text-white/70">
-            Earn official recognition and build trust in your market.
-          </p>
-        </div>
+        <h3 class="text-lg font-bold text-gold">Recognition & Credibility</h3>
+        <p class="mt-3 text-sm leading-7 text-white/70">
+          Earn official recognition and build trust in your market.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- BENEFITS -->
   <section id="benefits" class="py-20 lg:py-24">
@@ -460,44 +495,49 @@
   </section>
 
   <!-- HOW IT WORKS -->
-  <section id="how-it-works" class="py-20 lg:py-24">
-    <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <div class="reveal mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span class="inline-flex rounded-full bg-gold/10 px-4 py-2 text-sm font-bold text-goldDark">
-          How It Works
-        </span>
-        <h2 class="mt-5 text-3xl font-extrabold text-navy md:text-5xl">
-          A simple process for your business to join
-        </h2>
-      </div>
-
-      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        <div class="reveal rounded-3xl border border-slate-200 p-7 shadow-soft">
-          <div class="mb-4 text-4xl font-extrabold text-gold">01</div>
-          <h3 class="text-xl font-bold text-navy">Register your business</h3>
-          <p class="mt-3 text-slate-600">Submit your application to take part in TGL.</p>
-        </div>
-
-        <div class="reveal reveal-delay-1 rounded-3xl border border-slate-200 p-7 shadow-soft">
-          <div class="mb-4 text-4xl font-extrabold text-gold">02</div>
-          <h3 class="text-xl font-bold text-navy">Submit your details</h3>
-          <p class="mt-3 text-slate-600">Share your business information and category details.</p>
-        </div>
-
-        <div class="reveal reveal-delay-2 rounded-3xl border border-slate-200 p-7 shadow-soft">
-          <div class="mb-4 text-4xl font-extrabold text-gold">03</div>
-          <h3 class="text-xl font-bold text-navy">Share your business profile</h3>
-          <p class="mt-3 text-slate-600">Present your journey, products, services, and strengths.</p>
-        </div>
-
-        <div class="reveal reveal-delay-3 rounded-3xl border border-slate-200 p-7 shadow-soft">
-          <div class="mb-4 text-4xl font-extrabold text-gold">04</div>
-          <h3 class="text-xl font-bold text-navy">Get evaluated by jury</h3>
-          <p class="mt-3 text-slate-600">Your brand is reviewed on structured performance criteria.</p>
-        </div>
-      </div>
+<section id="how-it-works" class="py-20 lg:py-24">
+  <div class="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+    
+    <div class="reveal mx-auto flex max-w-3xl flex-col items-center text-center">
+      <span class="inline-flex rounded-full bg-gold/10 px-4 py-2 text-sm font-bold text-goldDark">
+        How It Works
+      </span>
+      <h2 class="mt-5 text-3xl font-extrabold text-navy md:text-5xl">
+        A simple process for your business to join
+      </h2>
     </div>
-  </section>
+
+    <!-- GRID -->
+    <div class="mt-12 grid grid-cols-2 gap-4 md:grid-cols-2 xl:grid-cols-4">
+
+      <div class="reveal rounded-3xl border border-slate-200 p-6 shadow-soft text-center">
+        <div class="mb-3 text-3xl font-extrabold text-gold">01</div>
+        <h3 class="text-base font-bold text-navy sm:text-lg">Register your business</h3>
+        <p class="mt-2 text-sm text-slate-600">Submit your application</p>
+      </div>
+
+      <div class="reveal reveal-delay-1 rounded-3xl border border-slate-200 p-6 shadow-soft text-center">
+        <div class="mb-3 text-3xl font-extrabold text-gold">02</div>
+        <h3 class="text-base font-bold text-navy sm:text-lg">Submit your details</h3>
+        <p class="mt-2 text-sm text-slate-600">Share business info</p>
+      </div>
+
+      <div class="reveal reveal-delay-2 rounded-3xl border border-slate-200 p-6 shadow-soft text-center">
+        <div class="mb-3 text-3xl font-extrabold text-gold">03</div>
+        <h3 class="text-base font-bold text-navy sm:text-lg">Share your profile</h3>
+        <p class="mt-2 text-sm text-slate-600">Present your business</p>
+      </div>
+
+      <div class="reveal reveal-delay-3 rounded-3xl border border-slate-200 p-6 shadow-soft text-center">
+        <div class="mb-3 text-3xl font-extrabold text-gold">04</div>
+        <h3 class="text-base font-bold text-navy sm:text-lg">Get evaluated</h3>
+        <p class="mt-2 text-sm text-slate-600">Reviewed by experts</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- CONTACT -->
   <section id="contact" class="bg-navy py-20 lg:py-24">
